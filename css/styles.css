@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.02em;
     font-weight: 500;
     fill: currentColor;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) , fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .header-contacts{
@@ -87,11 +87,14 @@ h1,h2,h3,h4,h5,h6{
 .link-header:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
+
+    
 }
 .link{
     text-decoration: none;
     color:inherit;
     
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link{
   padding-top: 32px;
@@ -101,9 +104,11 @@ h1,h2,h3,h4,h5,h6{
 
 .link:hover{
     color: var(--accent-color);
+   
 }
 .link:focus{
     color: var(--accent-color);
+    
 }
 .nav-link:active{
     color: var(--accent-color);
@@ -120,7 +125,7 @@ h1,h2,h3,h4,h5,h6{
 .icon-header{
     margin-right: 10px;
     fill: currentColor;
-    
+   
 }
 .icon-header:hover,
 .icon-header:focus{
@@ -151,7 +156,7 @@ h1,h2,h3,h4,h5,h6{
    
 }
 .hero{
-    /* background-color: var(--second-background-color); */
+    
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,6 +197,8 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 4px;
     padding: 10px 32px;
     margin-top: var(--column-gap);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .button:hover, .button:focus{
@@ -248,6 +255,22 @@ h1,h2,h3,h4,h5,h6{
     margin:var(--margin-none);
     column-gap: var(--column-gap);
 }
+.images-about{
+ position: relative;
+}
+.text-about{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 .backgrond{
 background-color: var(--second-body-color);    
 }
@@ -283,6 +306,8 @@ background-color: var(--second-body-color);
     justify-content: center;
     color: var(--icons-color);
     fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
  }
@@ -290,6 +315,7 @@ background-color: var(--second-body-color);
    background-color: var(--accent-color);
    fill: var(--white-color);
    border-radius: 50%;
+
  }
 
 
@@ -345,6 +371,8 @@ background-color: var(--second-body-color);
     line-height: 1.87;
     margin: var(--margin-none);
     display: block;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-portfolio{
     font-weight: 700;
@@ -371,6 +399,8 @@ background-color: var(--second-body-color);
     border-radius: 4px;
     border: 0px;
     padding: 6px 22px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .button-portfolio:hover,
 .button-portfolio:focus{
@@ -457,6 +487,7 @@ margin-right: 0px;
     align-items: center;
     justify-content: center;
     
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     
 }
 .icons-client{
@@ -523,6 +554,8 @@ margin-bottom: 9px;
     width: 44px;
     height: 44px;
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .join-contact {
     margin: var(--margin-none);
@@ -550,17 +583,24 @@ margin-bottom: 9px;
     width: 100%;
     height: 100%; 
     background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
 }
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(1.25);
+}
 .modal{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     padding: 8px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     min-width: 528px;
     min-height: 581px;
@@ -571,6 +611,7 @@ margin-bottom: 9px;
     
 }
 .modal-button{
+    cursor: pointer;
     width: 30px;
     height: 30px;
     padding: var(--margin-none);
