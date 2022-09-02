@@ -449,7 +449,7 @@ margin-right: 0px;
 
 }
 .link-client{
-    /* width: 170px; */
+    
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -461,7 +461,7 @@ margin-right: 0px;
 }
 .icons-client{
     display: flex;
-    /* column-gap:var(--column-gap); */
+    
 }
 .footer{
     background-color: var(--second-background-color);
@@ -571,5 +571,15 @@ margin-bottom: 9px;
     
 }
 .modal-button{
-    
+    width: 30px;
+    height: 30px;
+    padding: var(--margin-none);
+    background: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: var(--black-color);
+    fill: currentColor;
+}
+.icon-close-button{
+   
 }
