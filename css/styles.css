@@ -128,13 +128,9 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 2px;
     margin: var(--margin-none);
 }
-.link:hover{
+.link:hover, .link:focus{
     color: var(--accent-color);
    
-}
-.link:focus{
-    color: var(--accent-color);
-    
 }
 .nav-link:active{
     color: var(--accent-color);
