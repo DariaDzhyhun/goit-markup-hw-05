@@ -694,6 +694,7 @@ margin-bottom: 9px;
     
 }
 .modal-button{
+    
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -705,5 +706,5 @@ margin-bottom: 9px;
     fill: currentColor;
 }
 .icon-close-button{
-    
+   
 }
