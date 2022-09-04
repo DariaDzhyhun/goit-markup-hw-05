@@ -173,7 +173,9 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     margin: var(--margin-none);
 }
-
+.nav-link.active-page {
+    color: var(--accent-color);
+}
 .logo{
     color: var(--accent-color);
 }
@@ -676,8 +678,7 @@ margin-bottom: 9px;
 }
 .modal{
     position: absolute;
-    display: flex;
-    justify-content: flex-end;
+    
     top: 50%;
     left: 50%;
     padding: 8px;
@@ -694,7 +695,8 @@ margin-bottom: 9px;
     
 }
 .modal-button{
-    
+    position: absolute;
+    right: 8px;
     cursor: pointer;
     width: 30px;
     height: 30px;
